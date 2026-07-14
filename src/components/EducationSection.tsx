@@ -10,7 +10,7 @@ const EducationSection = () => {
       <div className="mx-auto max-w-5xl">
         <div className="mb-16">
           <div className="mb-4 font-mono text-xs uppercase tracking-widest text-zinc-500">
-            04 — Formation
+            02 — Formation
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Cursus & Certifications

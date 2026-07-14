@@ -15,10 +15,10 @@ const AboutSection = () => {
         </div>
         <div className="space-y-4 text-sm leading-relaxed text-zinc-400">
           <p>
-            À propos de moi je suis un développeur Full-Stack & Mobile et
-            concepteur UI/UX basé à Kinshasa (RDC). Actuellement étudiant à
-            l'Université Catholique du Congo (UCC), il allie rigueur académique
-            et expertise technique. <br />
+            À propos de moi je suis un développeur Full-Stack & Mobile et basé à
+            Kinshasa (RDC). Actuellement étudiant à l'Université Catholique du
+            Congo (UCC), il allie rigueur académique et expertise technique.{' '}
+            <br />
             <br />
             <strong className="text-2xl">
               Expertise Technique Frontend & Mobile :

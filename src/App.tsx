@@ -18,14 +18,15 @@ export default function Portfolio() {
       {/* About */}
       <AboutSection />
 
+      {/* Education Section */}
+      <EducationSection />
+
       {/* Skills */}
 
       <SkillsSection />
       {/* Projects */}
       <ProjectSection />
 
-      {/* Education Section */}
-      <EducationSection />
       {/* Contact */}
       <ContactSection />
 

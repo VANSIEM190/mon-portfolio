@@ -4,12 +4,12 @@ import { FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa'
 export const skills = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 90 },
-  { name: 'JavaScript / TypeScript', level: 75 },
-  { name: 'React', level: 72 },
-  { name: 'React Native / Expo', level: 65 },
-  { name: 'Nodejs / Prisma / Mysql', level: 60 },
+  { name: 'JavaScript / TypeScript', level: 78 },
+  { name: 'React', level: 75 },
+  { name: 'React Native / Expo', level: 73 },
+  { name: 'Nodejs / Prisma / Mysql', level: 65 },
   { name: 'Firebase / Supabase', level: 75 },
-  { name: 'Java', level: 45 },
+  { name: 'Java', level: 42 },
 ]
 
 export const stack = [
@@ -32,24 +32,31 @@ export const projects = [
       "MedicQuiz — Plateforme Web & Mobile d'Orientation Médicale à Distance",
     description: `Conception et développement d'un écosystème complet (Web et Mobile) visant à digitaliser le pré-diagnostic et à faciliter l'accès aux soins sans déplacement. La plateforme permet aux professionnels de santé de publier des quiz d'évaluation ciblés, offrant aux patients un outil d'auto-examen et d'orientation immédiat. Cet écosystème interconnecté repose sur une application mobile React Native (Expo) et une interface web moderne, synchronisées via une API hautement disponible hébergée sur Render.`,
     prefix: 'MQ',
-    tags: [
-      'React Native',
-      'Expo',
-      'React (Web)',
-      'TypeScript',
-      'Render',
-      'Docker',
-      'firebase',
-    ],
+    tags: ['React (Web)', 'TypeScript', 'Render', 'Docker', 'firebase'],
     link: 'https://medicquiz.onrender.com/',
   },
   {
-    title:
-      "MedicQuiz — Plateforme Web & Mobile d'Orientation Médicale à Distance",
-    description: `Conception et développement d'un écosystème complet ( Mobile) visant à digitaliser le pré-diagnostic et à faciliter l'accès aux soins sans déplacement. La plateforme permet aux professionnels de santé de publier des quiz d'évaluation ciblés, offrant aux patients un outil d'auto-examen et d'orientation immédiat. Cet écosystème interconnecté repose sur une application mobile React Native (Expo) et une interface web moderne, synchronisées via une API hautement disponible hébergée sur Render.`,
+    title: "MedicQuiz — Plateforme Mobile d'Orientation Médicale",
+    description: `Conception et développement d'une application mobile React Native (Expo) visant à digitaliser le pré-diagnostic et à faciliter l'accès aux soins sans déplacement. La plateforme permet aux professionnels de santé de publier des quiz d'évaluation ciblés, offrant aux patients un outil d'auto-examen et d'orientation immédiat. Cet écosystème interconnecté repose sur une application mobile React Native (Expo) et une interface web moderne, synchronisées via une API hautement disponible hébergée sur Render.`,
     prefix: 'MQ',
-    tags: ['React Native', 'Expo', 'TypeScript', 'firebase'],
-    link: 'https://medicquiz.onrender.com/',
+    tags: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
+    // On utilise le "Play URL" d'Appetize
+    link: 'https://appetize.io/embed/b_lah4eqdvi6762sqqyfuqpunqzm',
+  },
+  {
+    title:
+      "ProfALaMaison — Plateforme de Tutorat à Domicile et Réservation d'Heures de Cours",
+    description: `Conception et engineering d'une plateforme web mettant en relation directe les parents d'élèves et des tuteurs qualifiés pour des cours de soutien à la maison. L'application intègre un moteur de recherche multicritère pour identifier le profil d'enseignant idéal et propose un système de réservation de séances flexible, facturé à la minute. L'architecture repose sur une gestion rigoureuse des créneaux horaires, la synchronisation en temps réel des agendas et un tableau de bord intuitif permettant de suivre l'historique des cours et les budgets de formation.`,
+    prefix: 'PAM',
+    tags: [
+      'React',
+      'tailwindcss',
+      'TypeScript',
+      'java',
+      'spring boot',
+      'mysql',
+    ],
+    link: 'https://profalamaison.com/',
   },
   {
     title: 'SmartQuiz — Plateforme de Quiz Gaming avec Classement Interactif',

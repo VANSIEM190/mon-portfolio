@@ -10,7 +10,7 @@ const SkillsSection = () => {
       <div className="mx-auto max-w-5xl">
         <div className="mb-16 text-center">
           <div className="mb-4 font-mono text-xs uppercase tracking-widest text-zinc-500">
-            02 — Compétences
+            03 — Compétences
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Maîtrise technologique
