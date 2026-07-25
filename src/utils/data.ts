@@ -34,6 +34,7 @@ export const projects = [
     prefix: 'MQ',
     tags: ['React (Web)', 'TypeScript', 'Render', 'Docker', 'firebase'],
     link: 'https://medicquiz.onrender.com/',
+    category: 'Personnel',
   },
   {
     title: "MedicQuiz — Plateforme Mobile d'Orientation Médicale",
@@ -42,6 +43,7 @@ export const projects = [
     tags: ['React Native', 'Expo', 'TypeScript', 'Firebase'],
     // On utilise le "Play URL" d'Appetize
     link: 'https://appetize.io/embed/b_lah4eqdvi6762sqqyfuqpunqzm',
+    category: 'Personnel',
   },
   {
     title:
@@ -57,6 +59,7 @@ export const projects = [
       'mysql',
     ],
     link: 'https://profalamaison.com/',
+    category: 'Communautaire',
   },
   {
     title: 'SmartQuiz — Plateforme de Quiz Gaming avec Classement Interactif',
@@ -64,6 +67,7 @@ export const projects = [
     prefix: 'LQ',
     tags: ['React', 'JavaScript', 'Tailwind CSS', 'Fiirebase', 'vercel'],
     link: 'https://quiz-application-kappa-green.vercel.app/',
+    category: 'Personnel',
   },
   {
     title:
@@ -72,6 +76,17 @@ export const projects = [
     prefix: 'CD',
     tags: ['React', 'JavaScript', 'Tailwind CSS', 'Firebase', 'vercel'],
     link: 'https://www.clipnestdev.tech/',
+    category: 'Personnel',
+  },
+
+  {
+    title: "Portfolio Professionnel — [Van'siem Fono Jeancy]",
+    description: `Conception et développement sur mesure du site vitrine institutionnel de l'entreprise. Intégration d'une interface dynamique et responsive, optimisation des performances d'affichage et mise en place d'un parcours utilisateur optimisé pour la conversion et la prise de contact.`,
+    prefix: 'SCJ',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    link: 'https://vansiem-portefolio.vercel.app/',
+    category: 'Client',
+    clientName: 'École Sacré Cœur',
   },
 ]
 

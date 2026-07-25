@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowUpRight, Download } from 'lucide-react'
-import imageProfil from '../assets/img-profil.jpg'
+// import imageProfil from '../assets/img-profil.jpg'
 import { socials } from '../utils/data'
 
 const HeroSection = () => {
@@ -81,14 +81,14 @@ const HeroSection = () => {
         <div className="order-1 flex justify-center md:order-2 md:justify-end">
           <div className="relative">
             <div className="relative">
-              <div className="flex h-72 w-72 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 shadow-2xl sm:h-80 sm:w-80 md:h-96 md:w-96">
+              <div className="flex h-72 w-72 items-center justify-center rounded-2xl border border-zinc-800  shadow-2xl sm:h-80 sm:w-80 md:h-96 md:w-96">
                 <div className="text-center">
                   <img
-                    src={imageProfil}
+                    src="/vansiem.jpeg"
                     alt="Photo de profil"
                     width={800}
                     height={800}
-                    className="h-72 w-72 rounded-2xl object-cover grayscale transition-all duration-500 hover:grayscale-0 sm:h-80 sm:w-80 md:h-96 md:w-96"
+                    className="h-72 w-72 rounded-2xl object-cover grayscale transition-all duration-500 grayscale-0 sm:h-80 sm:w-80 md:h-96 md:w-96"
                   />
                 </div>
               </div>
