@@ -78,7 +78,15 @@ export const projects = [
     link: 'https://www.clipnestdev.tech/',
     category: 'Personnel',
   },
-
+  {
+    title:
+      'FsiUcc — Plateforme Communautaire de la Faculté des Sciences Informatiques',
+    description: `Conception et développement collaboratif du site officiel de la communauté FsiUcc, la Faculté des Sciences Informatiques. La plateforme sert de vitrine et d'espace de centralisation pour les étudiants et membres de la faculté, avec une interface moderne et responsive développée dans le cadre d'un projet communautaire.`,
+    prefix: 'FSI',
+    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://fsiucc.com/',
+    category: 'Communautaire',
+  },
   {
     title: "Portfolio Professionnel — [Van'siem Fono Jeancy]",
     description: `Conception et développement sur mesure du site vitrine institutionnel de l'entreprise. Intégration d'une interface dynamique et responsive, optimisation des performances d'affichage et mise en place d'un parcours utilisateur optimisé pour la conversion et la prise de contact.`,
@@ -86,7 +94,7 @@ export const projects = [
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     link: 'https://vansiem-portefolio.vercel.app/',
     category: 'Client',
-    clientName: 'École Sacré Cœur',
+    clientName: 'jeançy',
   },
 ]
 
