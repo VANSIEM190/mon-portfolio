@@ -1,4 +1,11 @@
-import { Mail, Code2, Smartphone, Database } from 'lucide-react'
+import {
+  Mail,
+  Code2,
+  Smartphone,
+  Database,
+  Container,
+  Palette,
+} from 'lucide-react'
 import { FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa'
 
 export const skills = [
@@ -23,6 +30,16 @@ export const stack = [
     icon: Database,
     label: 'Backend',
     items: ['Node.js', 'Java', 'Prisma', 'Firebase', 'Supabase', 'MySQL'],
+  },
+  {
+    icon: Container,
+    label: 'DevOps & Déploiement',
+    items: ['Docker', 'Vercel', 'onrender', 'Git / GitHub'],
+  },
+  {
+    icon: Palette,
+    label: 'Outils',
+    items: ['Figma', 'Canva'],
   },
 ]
 
@@ -107,8 +124,8 @@ export const education = [
       "Spécialisation en génie logiciel, modélisation des architectures de bases de données et développement des systèmes d'information.",
   },
   {
-    degree: 'Certification Professionnelle Full-Stack React & Redux',
-    school: 'Udemy Academic Blueprint',
+    degree: 'Certification Professionnelle  React & Redux',
+    school: 'Udemy ',
     period: '2026',
     description:
       "Maîtrise avancée des architectures d'états complexes, du cycle de vie des composants React et de l'intégration de middleware asynchrones.",
