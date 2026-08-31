@@ -12,29 +12,37 @@ export const skills = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 90 },
   { name: 'JavaScript / TypeScript', level: 78 },
-  { name: 'React', level: 75 },
+  { name: 'React/nextjs', level: 75 },
   { name: 'React Native / Expo', level: 73 },
   { name: 'Nodejs / Prisma / Mysql', level: 65 },
   { name: 'Firebase / Supabase', level: 75 },
-  { name: 'Java', level: 42 },
+  { name: 'Java', level: 35 },
 ]
 
 export const stack = [
   {
     icon: Code2,
     label: 'Frontend',
-    items: ['React', 'TypeScript', 'HTML', 'CSS'],
+    items: ['React', 'Nextjs', 'TypeScript', 'HTML', 'CSS'],
   },
   { icon: Smartphone, label: 'Mobile', items: ['React Native', 'Expo'] },
   {
     icon: Database,
     label: 'Backend',
-    items: ['Node.js', 'Java', 'Prisma', 'Firebase', 'Supabase', 'MySQL'],
+    items: [
+      'Node.js/ExpressJs',
+      'Nextjs',
+      'Java',
+      'Prisma',
+      'Firebase',
+      'Supabase',
+      'MySQL',
+    ],
   },
   {
     icon: Container,
     label: 'DevOps & Déploiement',
-    items: ['Docker', 'Vercel', 'onrender', 'Git / GitHub'],
+    items: ['Docker', 'Vercel', 'O2switch', 'onrender', 'Git / GitHub'],
   },
   {
     icon: Palette,
@@ -49,7 +57,7 @@ export const projects = [
       "MedicQuiz — Plateforme Web & Mobile d'Orientation Médicale à Distance",
     description: `Conception et développement d'un écosystème complet (Web et Mobile) visant à digitaliser le pré-diagnostic et à faciliter l'accès aux soins sans déplacement. La plateforme permet aux professionnels de santé de publier des quiz d'évaluation ciblés, offrant aux patients un outil d'auto-examen et d'orientation immédiat. Cet écosystème interconnecté repose sur une application mobile React Native (Expo) et une interface web moderne, synchronisées via une API hautement disponible hébergée sur Render.`,
     prefix: 'MQ',
-    tags: ['React (Web)', 'TypeScript', 'Render', 'Docker', 'firebase'],
+    tags: ['React (Web)', 'TypeScript', 'Onrender', 'Docker', 'firebase'],
     link: 'https://medicquiz.onrender.com/',
     category: 'Personnel',
   },
@@ -71,9 +79,10 @@ export const projects = [
       'React',
       'tailwindcss',
       'TypeScript',
-      'java',
       'spring boot',
       'mysql',
+      'Docker',
+      'onrender',
     ],
     link: 'https://profalamaison.com/',
     category: 'Communautaire',
@@ -97,10 +106,19 @@ export const projects = [
   },
   {
     title:
+      'Mindset de Leader — Plateforme de Motivation et de Conseils pour les Jeunes',
+    description: `Conception du site vitrine officiel de Mindset de Leader, une plateforme dédiée à la motivation et à l'accompagnement des jeunes, pensée pour remplacer un groupe WhatsApp communautaire de conseils vocaux. Le site présente la mission de la plateforme, l'équipe, l'historique, les actualités et un blog, et sert de vitrine en attendant l'application mobile qui portera les fonctionnalités avancées (bibliothèque de contenus, notifications, dashboard).`,
+    prefix: 'ML',
+    tags: ['React', 'Typescript', 'Tailwind CSS', 'Nodejs', 'vercel'],
+    link: 'https://mindsetdesleaders.vercel.app/',
+    category: 'Client',
+  },
+  {
+    title:
       'FsiUcc — Plateforme Communautaire de la Faculté des Sciences Informatiques',
     description: `Conception et développement collaboratif du site officiel de la communauté FsiUcc, la Faculté des Sciences Informatiques. La plateforme sert de vitrine et d'espace de centralisation pour les étudiants et membres de la faculté, avec une interface moderne et responsive développée dans le cadre d'un projet communautaire.`,
     prefix: 'FSI',
-    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'laravel', 'O2switch'],
     link: 'https://fsiucc.com/',
     category: 'Communautaire',
   },
@@ -136,6 +154,13 @@ export const education = [
     period: '2025',
     description:
       "Stage pratique obligatoire avant l'obtention du diplôme. Immersion dans le système de gestion fiscale de la ville pour comprendre la numérisation et le traitement des données administratives.",
+  },
+  {
+    degree: 'Stage en service client',
+    school: 'Startimes | Kinshasa',
+    period: '2026',
+    description:
+      'Stage effectué chez Startimes RDC pour approfondir mes savoirs et mon expérience. Immersion dans le fonctionnement du service client, avec un apprentissage concret des appels entrants (call-in) et des appels sortants (call-out).',
   },
   {
     degree: "Diplôme d'État en Option Commerciale et Gestion",

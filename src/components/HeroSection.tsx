@@ -1,66 +1,86 @@
-import { ArrowDown, ArrowUpRight, Download } from 'lucide-react'
+import { Download } from 'lucide-react'
 import { socials } from '../utils/data'
 
 const HeroSection = () => {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen items-center px-4 pt-32 pb-20 sm:px-6"
+      className="relative overflow-hidden bg-[#f7f6f1] px-4 pt-32 pb-20 sm:px-6"
     >
+      {/* Fond quadrillé subtil */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 overflow-hidden"
-      >
-        <div className="absolute -top-40 -left-20 h-125 w-125 rounded-full bg-zinc-900/40 blur-[120px]" />
-        <div className="absolute top-40 -right-20 h-150 w-150 rounded-full bg-slate-900/30 blur-[140px]" />
-      </div>
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#00000009_1px,transparent_1px),linear-gradient(to_bottom,#00000009_1px,transparent_1px)] bg-[size:44px_44px]"
+      />
 
-      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 md:grid-cols-[1.2fr_1fr]">
-        <div className="order-2 md:order-1">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 px-3 py-1 text-xs font-mono text-zinc-400">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400/85 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
-            Disponible pour de nouveaux projets
-          </div>
-
-          <div className="mb-4 font-mono text-sm tracking-wide text-zinc-400">
-            Moi c'est{' '}
-            <span className="text-white font-semibold">
-              Van'siem Fono Grace
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-16 lg:grid-cols-[1.15fr_1fr]">
+        {/* Colonne de gauche */}
+        <div>
+          <h1 className="text-balance text-4xl leading-[1.15] font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
+            Je développe{' '}
+            <span className="font-serif font-medium text-indigo-950 italic">
+              l'architecture web
+            </span>{' '}
+            qui propulse votre{' '}
+            <span className="font-serif font-medium text-emerald-900 italic">
+              croissance
             </span>
-            , étudiant à l'UCC.
-          </div>
-
-          <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Développeur
-            <br />
-            <span className="text-zinc-500 font-light">Full-Stack</span> &amp;
-            Mobile
+            .
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-zinc-400">
-            Je conçois des écosystèmes web et mobiles modernes, fluides et
-            optimisés avec
-            <span className="text-zinc-200"> React</span>,
-            <span className="text-zinc-200"> React Native / Expo</span> et
-            <span className="text-zinc-200"> TypeScript</span>.
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-zinc-600">
+            Développeur{' '}
+            <span className="font-medium text-indigo-800">Fullstack</span> &amp;
+            concepteur de produits{' '}
+            <span className="font-medium text-indigo-800">digitaux</span>. Je
+            conçois des architectures robustes et des applications web
+            optimisées pour{' '}
+            <span className="font-medium text-emerald-800">convertir</span> vos
+            utilisateurs, maximiser les performances et accompagner votre
+            croissance.
           </p>
+
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#projects"
-              className="inline-flex items-center gap-2 rounded-full bg-zinc-100 px-5 py-3 text-sm font-medium text-zinc-900 transition-all hover:bg-white"
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-md bg-zinc-900 px-5 py-3 font-mono text-xs font-semibold tracking-widest text-white uppercase transition-colors hover:bg-zinc-800"
             >
-              Voir mes projets <ArrowUpRight className="h-4 w-4" />
+              Démarrer un projet
             </a>
             <a
-              href="/cvVansiemPortfolio.pdf"
-              download="CV_Gracia_Van_Siem.pdf"
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 px-5 py-3 text-sm font-medium text-zinc-300 transition-colors hover:border-zinc-700 hover:bg-zinc-900"
+              href="#projects"
+              className="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-5 py-3 font-mono text-xs font-semibold tracking-widest text-zinc-800 uppercase transition-colors hover:border-zinc-400 hover:bg-zinc-50"
             >
-              Télécharger mon CV <Download className="h-4 w-4" />
+              Consulter mes réalisations
             </a>
           </div>
 
-          <div className="mt-12 flex items-center gap-4">
+          <div className="mt-12 flex flex-wrap items-center gap-x-12 gap-y-6">
+            <div>
+              <p className="font-mono text-[11px] tracking-widest text-zinc-500 uppercase">
+                Maîtrise intelligence artificielle
+              </p>
+              <p className="mt-1 font-serif text-3xl text-zinc-900">
+                70%{' '}
+                <span className="font-sans text-sm font-normal text-zinc-500">
+                  (LLM)
+                </span>
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-[11px] tracking-widest text-zinc-500 uppercase">
+                Score de performance
+              </p>
+              <p className="mt-1 font-serif text-3xl text-zinc-900">
+                75/100{' '}
+                <span className="font-sans text-sm font-normal text-zinc-500">
+                  (moyenne)
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 flex items-center gap-4">
             {socials.map(s => (
               <a
                 key={s.label}
@@ -68,44 +88,35 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-900 bg-zinc-950 text-zinc-400 transition-all hover:border-zinc-600 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-500 transition-all hover:border-zinc-400 hover:text-zinc-900"
               >
                 <s.icon className="h-4 w-4" />
               </a>
             ))}
+            <a
+              href="/cvVansiemPortfolio.pdf"
+              download="CV_Gracia_Van_Siem.pdf"
+              className="inline-flex items-center gap-2 font-mono text-xs font-medium text-zinc-600 underline decoration-zinc-300 underline-offset-4 transition-colors hover:text-zinc-900"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Télécharger mon CV
+            </a>
           </div>
         </div>
 
-        {/* Profile Placeholder (No Image broken link) */}
-        <div className="order-1 flex justify-center md:order-2 md:justify-end">
-          <div className="relative">
-            <div className="relative">
-              <div className="flex h-72 w-72 items-center justify-center rounded-2xl border border-zinc-800  shadow-2xl sm:h-80 sm:w-80 md:h-96 md:w-96">
-                <div className="text-center">
-                  <img
-                    src="/vanProfil1.jpeg"
-                    alt="Photo de profil"
-                    width={800}
-                    height={800}
-                    className="h-75 w-72 rounded-2xl object-cover object-top transition-all duration-500 grayscale-0 sm:h-80 sm:w-80 md:h-96 md:w-96"
-                  />
-                </div>
-              </div>
-            </div>
+        {/* Colonne de droite : photo encadrée + badges flottants */}
+        <div className="relative mx-auto w-full max-w-sm">
+          <div className="rounded-2xl border-4 border-zinc-900 bg-zinc-900 p-2 shadow-2xl">
+            <img
+              src="/vanProfil1.jpeg"
+              alt="Photo de profil"
+              width={800}
+              height={800}
+              className="aspect-[4/5] w-full rounded-lg object-cover object-top grayscale"
+            />
           </div>
         </div>
       </div>
-
-      <a
-        href="#about"
-        aria-label="Scroll vers la suite"
-        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs text-zinc-500 md:flex"
-      >
-        <span className="font-mono text-[10px] uppercase tracking-widest">
-          Scroll
-        </span>
-        <ArrowDown className="h-3.5 w-3.5 animate-bounce text-zinc-600" />
-      </a>
     </section>
   )
 }
