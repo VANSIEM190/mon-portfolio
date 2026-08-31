@@ -61,7 +61,7 @@ const HeroSection = () => {
                 Maîtrise intelligence artificielle
               </p>
               <p className="mt-1 font-serif text-3xl text-zinc-900">
-                70%{' '}
+                60%{' '}
                 <span className="font-sans text-sm font-normal text-zinc-500">
                   (LLM)
                 </span>
@@ -80,7 +80,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="mt-10 flex items-center gap-4">
+          <div className="mt-10 flex items-center flex-wrap gap-4">
             {socials.map(s => (
               <a
                 key={s.label}
