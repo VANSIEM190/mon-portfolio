@@ -4,7 +4,8 @@ import { socials } from '../utils/data'
 
 // URL de ton backend — configurable via variable d'env (Vite).
 // En prod, définis VITE_API_URL=https://ton-backend.up.railway.app (ou autre) dans .env
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+const API_URL =
+  import.meta.env.VITE_API_URL || 'https://chatbot-portfolio-16he.onrender.com'
 
 type Status = 'idle' | 'loading' | 'sent' | 'error'
 
