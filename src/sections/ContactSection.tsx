@@ -1,12 +1,10 @@
 import { Loader2, Mail, Send } from 'lucide-react'
 import { useState } from 'react'
-import { socials } from '../utils/data'
+import { socials } from '../data/socials'
+import { API_URL } from '../lib/api'
 
 // URL de ton backend — configurable via variable d'env (Vite).
 // En prod, définis VITE_API_URL=https://ton-backend.up.railway.app (ou autre) dans .env
-const API_URL =
-  import.meta.env.VITE_API_URL || 'https://chatbot-portfolio-16he.onrender.com'
-
 type Status = 'idle' | 'loading' | 'sent' | 'error'
 
 const ContactSection = () => {
@@ -52,7 +50,7 @@ const ContactSection = () => {
         <div className="space-y-8">
           <div>
             <div className="mb-4 font-mono text-xs tracking-widest text-zinc-500 uppercase">
-              08 — Contact
+              09 — Contact
             </div>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
               Collaborons{' '}

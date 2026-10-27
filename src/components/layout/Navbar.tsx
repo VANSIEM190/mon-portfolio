@@ -8,7 +8,7 @@ const Navbar = () => {
         >
           <span>{"<Van'siem.dev/>"}</span>
         </a>
-        <ul className="hidden gap-8 text-xs font-medium uppercase tracking-widest text-zinc-400 md:flex">
+        <ul className="hidden gap-8 text-xs font-medium uppercase tracking-widest text-zinc-400 lg:flex">
           <li>
             <a href="#about" className="transition-colors hover:text-zinc-900">
               À propos
@@ -33,6 +33,22 @@ const Navbar = () => {
               className="transition-colors hover:text-zinc-900"
             >
               Formation
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              className="transition-colors hover:text-zinc-900"
+            >
+              Mes offres
+            </a>
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              className="transition-colors hover:text-zinc-900"
+            >
+              Témoignages
             </a>
           </li>
           <li>

@@ -1,14 +1,17 @@
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import AboutSection from './components/AboutSection'
-import SkillsSection from './components/SkillsSection'
-import ProjectSection from './components/ProjectSection'
-import EducationSection from './components/EducationSection'
-import ContactSection from './components/ContactSection'
-import Footer from './components/Footer'
-import YoutubeSection from './components/YoutubeSection'
-import TiktokSection from './components/TiktokSection'
-import ChatbotWidget from './components/Chatbot'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import RevealOnScroll from './components/ui/RevealOnScroll'
+import ChatbotWidget from './features/chatbot/ChatbotWidget'
+import AboutSection from './sections/AboutSection'
+import ContactSection from './sections/ContactSection'
+import EducationSection from './sections/EducationSection'
+import HeroSection from './sections/HeroSection'
+import ProjectSection from './sections/projects/ProjectSection'
+import SkillsSection from './sections/SkillsSection'
+import ServicesSection from './sections/ServicesSection'
+import TiktokSection from './sections/TiktokSection'
+import TestimonialsSection from './sections/TestimonialsSection'
+import YoutubeSection from './sections/YoutubeSection'
 
 export default function Portfolio() {
   return (
@@ -18,26 +21,51 @@ export default function Portfolio() {
       <ChatbotWidget />
 
       {/* Hero */}
-      <HeroSection />
+      <RevealOnScroll>
+        <HeroSection />
+      </RevealOnScroll>
       {/* About */}
-      <AboutSection />
+      <RevealOnScroll>
+        <AboutSection />
+      </RevealOnScroll>
 
       {/* Projects */}
-      <ProjectSection />
+      <RevealOnScroll>
+        <ProjectSection />
+      </RevealOnScroll>
 
       {/* Skills */}
 
-      <SkillsSection />
+      <RevealOnScroll>
+        <SkillsSection />
+      </RevealOnScroll>
 
       {/* Education Section */}
-      <EducationSection />
-      {/* youtube  Section */}
-      <YoutubeSection />
-      {/* youtube  Section */}
-      <TiktokSection />
+      <RevealOnScroll>
+        <EducationSection />
+      </RevealOnScroll>
+      {/* YouTube */}
+      <RevealOnScroll>
+        <YoutubeSection />
+      </RevealOnScroll>
+      {/* TikTok */}
+      <RevealOnScroll>
+        <TiktokSection />
+      </RevealOnScroll>
+      {/* Offres de formation et création de sites web */}
+      <RevealOnScroll>
+        <ServicesSection />
+      </RevealOnScroll>
+
+      {/* Témoignages */}
+      <RevealOnScroll>
+        <TestimonialsSection />
+      </RevealOnScroll>
 
       {/* Contact */}
-      <ContactSection />
+      <RevealOnScroll>
+        <ContactSection />
+      </RevealOnScroll>
 
       <Footer />
     </div>

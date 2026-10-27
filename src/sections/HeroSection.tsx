@@ -1,11 +1,11 @@
-import { Download } from 'lucide-react'
-import { socials } from '../utils/data'
+import { Download } from "lucide-react";
+import { socials } from "../data/socials";
 
 const HeroSection = () => {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-[#f7f6f1] px-4 pt-32 pb-20 sm:px-6"
+      className="relative overflow-hidden bg-[#f7f6f1] px-4 pt-28 pb-16 sm:px-6 lg:pt-32 lg:pb-20"
     >
       {/* Fond quadrillé subtil */}
       <div
@@ -13,15 +13,15 @@ const HeroSection = () => {
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#00000009_1px,transparent_1px),linear-gradient(to_bottom,#00000009_1px,transparent_1px)] bg-[size:44px_44px]"
       />
 
-      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-16 lg:grid-cols-[1.15fr_1fr]">
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 lg:gap-16 lg:grid-cols-[1.15fr_1fr]">
         {/* Colonne de gauche */}
         <div>
-          <h1 className="text-balance text-4xl leading-[1.15] font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
-            Je développe{' '}
+          <h1 className="text-balance text-4xl leading-[1.08] font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-5xl 2xl:text-6xl">
+            Je développe{" "}
             <span className="font-serif font-medium text-indigo-950 italic">
               l'architecture web
-            </span>{' '}
-            qui propulse votre{' '}
+            </span>{" "}
+            qui propulse votre{" "}
             <span className="font-serif font-medium text-emerald-900 italic">
               croissance
             </span>
@@ -29,12 +29,12 @@ const HeroSection = () => {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-zinc-600">
-            Développeur{' '}
+            Développeur{" "}
             <span className="font-medium text-indigo-800">Fullstack</span> &amp;
-            concepteur de produits{' '}
+            concepteur de produits{" "}
             <span className="font-medium text-indigo-800">digitaux</span>. Je
             conçois des architectures robustes et des applications web
-            optimisées pour{' '}
+            optimisées pour{" "}
             <span className="font-medium text-emerald-800">convertir</span> vos
             utilisateurs, maximiser les performances et accompagner votre
             croissance.
@@ -55,13 +55,13 @@ const HeroSection = () => {
             </a>
           </div>
 
-          <div className="mt-12 flex flex-wrap items-center gap-x-12 gap-y-6">
+          <div className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-5 border-y border-zinc-200 py-4">
             <div>
               <p className="font-mono text-[11px] tracking-widest text-zinc-500 uppercase">
                 Maîtrise intelligence artificielle
               </p>
               <p className="mt-1 font-serif text-3xl text-zinc-900">
-                60%{' '}
+                60%{" "}
                 <span className="font-sans text-sm font-normal text-zinc-500">
                   (LLM)
                 </span>
@@ -72,7 +72,7 @@ const HeroSection = () => {
                 Score de performance
               </p>
               <p className="mt-1 font-serif text-3xl text-zinc-900">
-                75/100{' '}
+                75/100{" "}
                 <span className="font-sans text-sm font-normal text-zinc-500">
                   (moyenne)
                 </span>
@@ -80,8 +80,8 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="mt-10 flex items-center flex-wrap gap-4">
-            {socials.map(s => (
+          <div className="mt-8 flex items-center flex-wrap gap-4">
+            {socials.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
@@ -106,19 +106,19 @@ const HeroSection = () => {
 
         {/* Colonne de droite : photo encadrée + badges flottants */}
         <div className="relative mx-auto w-full max-w-sm">
-          <div className="rounded-2xl border-4 border-zinc-900 bg-zinc-900 p-2 shadow-2xl">
+          <div className="rounded-full border-2 border-zinc-900 bg-zinc-900 p-2 shadow-2xl">
             <img
-              src="/vanProfil1.jpeg"
+              src="/van.jpeg"
               alt="Photo de profil"
               width={800}
               height={800}
-              className="aspect-[4/5] w-full rounded-lg object-cover object-top grayscale"
+              className="aspect-square w-full rounded-full object-cover object-top"
             />
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

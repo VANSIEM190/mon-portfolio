@@ -1,4 +1,4 @@
-import { skills, stack } from '../utils/data'
+import { skills, stack } from '../data/skills'
 import { Sparkles } from 'lucide-react'
 
 const SkillsSection = () => {

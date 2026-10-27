@@ -12,10 +12,10 @@ const AboutSection = () => {
               01 — À propos
             </div>
             <h2 className="text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-              Je transforme des architectures{' '}
+              Je transforme des architectures{" "}
               <span className="font-serif font-medium text-indigo-950 italic">
                 complexes
-              </span>{' '}
+              </span>{" "}
               en produits fluides.
             </h2>
           </div>
@@ -36,17 +36,17 @@ const AboutSection = () => {
               <li>
                 <span className="font-medium text-zinc-800">
                   Frontend &amp; Mobile
-                </span>{' '}
-                — React 19, React Native avec Expo, TypeScript.
+                </span>{" "}
+                React 19, React Native avec Expo, TypeScript.
               </li>
               <li>
                 <span className="font-medium text-zinc-800">
                   Backend &amp; Data
-                </span>{' '}
-                — Architecture robuste avec Supabase, Prisma et MySQL.
+                </span>{" "}
+                Architecture robuste avec Supabase, Prisma et MySQL.
               </li>
               <li>
-                <span className="font-medium text-zinc-800">Design</span> —
+                <span className="font-medium text-zinc-800 mr-0.5">Design</span>
                 Conception d'interfaces UI/UX fluides, modernes et centrées sur
                 l'utilisateur.
               </li>
@@ -59,7 +59,7 @@ const AboutSection = () => {
             </h3>
             <p className="text-sm leading-relaxed text-zinc-600">
               En tant que créateur de contenu, j'anime activement la chaîne
-              YouTube{' '}
+              YouTube{" "}
               <span className="font-medium text-zinc-800">ClipNestDev</span>, où
               je partage quotidiennement des tutoriels et des astuces concrètes
               pour aider les développeurs à progresser. Porté par la
@@ -92,7 +92,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

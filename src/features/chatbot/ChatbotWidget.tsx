@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Bot, X, Send } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { API_URL } from '../../lib/api'
 
 interface Message {
   id: number
@@ -11,9 +12,6 @@ interface Message {
 
 // URL de ton backend — configurable via variable d'env (Vite).
 // En prod, définis VITE_API_URL=https://ton-backend.up.railway.app (ou autre) dans .env
-const API_URL =
-  import.meta.env.VITE_API_URL || 'https://chatbot-portfolio-16he.onrender.com'
-
 const errorAnswer =
   "Désolé, je n'arrive pas à te répondre pour le moment 🙁 Réessaie dans un instant, ou écris directement à Gracia via la section Contact."
 

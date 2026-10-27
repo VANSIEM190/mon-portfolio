@@ -1,57 +1,15 @@
-import {
-  Mail,
-  Code2,
-  Smartphone,
-  Database,
-  Container,
-  Palette,
-} from 'lucide-react'
-import { FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa'
+export type ProjectCategory = 'Client' | 'Personnel' | 'Communautaire'
 
-export const skills = [
-  { name: 'HTML', level: 90 },
-  { name: 'CSS', level: 90 },
-  { name: 'JavaScript / TypeScript', level: 78 },
-  { name: 'React/nextjs', level: 75 },
-  { name: 'React Native / Expo', level: 73 },
-  { name: 'Nodejs / Prisma / Mysql', level: 65 },
-  { name: 'Firebase / Supabase', level: 75 },
-  { name: 'Java', level: 35 },
-]
-
-export const stack = [
-  {
-    icon: Code2,
-    label: 'Frontend',
-    items: ['React', 'Nextjs', 'TypeScript', 'HTML', 'CSS'],
-  },
-  { icon: Smartphone, label: 'Mobile', items: ['React Native', 'Expo'] },
-  {
-    icon: Database,
-    label: 'Backend',
-    items: [
-      'Node.js/ExpressJs',
-      'Nextjs',
-      'Java',
-      'Prisma',
-      'Firebase',
-      'Supabase',
-      'MySQL',
-    ],
-  },
-  {
-    icon: Container,
-    label: 'DevOps & Déploiement',
-    items: ['Docker', 'Vercel', 'O2switch', 'onrender', 'Git / GitHub'],
-  },
-  {
-    icon: Palette,
-    label: 'Outils',
-    items: ['Figma', 'Canva'],
-  },
-]
-
-export const projects = [
+export interface Project {
+  title: string
+  description: string
+  prefix: string
+  tags: string[]
+  link: string
+  category?: ProjectCategory
+  clientName?: string
+}
+export const projects: Project[] = [
   {
     title:
       "MedicQuiz — Plateforme Web & Mobile d'Orientation Médicale à Distance",
@@ -131,61 +89,4 @@ export const projects = [
     category: 'Client',
     clientName: 'jeançy',
   },
-]
-
-export const education = [
-  {
-    degree: 'Licence en Sciences Informatiques',
-    school: 'Université Catholique du Congo (UCC)',
-    period: 'En cours',
-    description:
-      "Spécialisation en génie logiciel, modélisation des architectures de bases de données et développement des systèmes d'information.",
-  },
-  {
-    degree: 'Certification Professionnelle  React & Redux',
-    school: 'Udemy ',
-    period: '2026',
-    description:
-      "Maîtrise avancée des architectures d'états complexes, du cycle de vie des composants React et de l'intégration de middleware asynchrones.",
-  },
-  {
-    degree: "Stage d'assimilation",
-    school: 'DUIK (Direction Urbaine des Impôts) | Kinshasa',
-    period: '2025',
-    description:
-      "Stage pratique obligatoire avant l'obtention du diplôme. Immersion dans le système de gestion fiscale de la ville pour comprendre la numérisation et le traitement des données administratives.",
-  },
-  {
-    degree: 'Stage en service client',
-    school: 'Startimes | Kinshasa',
-    period: '2026',
-    description:
-      'Stage effectué chez Startimes RDC pour approfondir mes savoirs et mon expérience. Immersion dans le fonctionnement du service client, avec un apprentissage concret des appels entrants (call-in) et des appels sortants (call-out).',
-  },
-  {
-    degree: "Diplôme d'État en Option Commerciale et Gestion",
-    school: 'CS Sacré Coeur De Jesus',
-    period: '2025',
-    description:
-      "Formation secondaire axée sur les principes fondamentaux de la gestion d'entreprise, de la comptabilité générale et de l'organisation administrative. Cette formation m'a permis de développer une forte rigueur analytique, une maîtrise du calcul commercial et une compréhension globale des flux financiers et économiques.",
-  },
-]
-export const socials = [
-  {
-    icon: FaLinkedin,
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/gracia-van-siem-575865347/',
-  },
-  {
-    icon: FaFacebook,
-    label: 'Facebook',
-    href: 'https://web.facebook.com/gracia.saint.van.s',
-  },
-  { icon: FaWhatsapp, label: 'WhatsApp', href: 'https://wa.me/243980307974' },
-  {
-    icon: FaInstagram,
-    label: 'Instagram',
-    href: 'https://www.instagram.com/graciasainvans190',
-  },
-  { icon: Mail, label: 'Email', href: 'mailto:vansiemgracia03@gmail.com' },
 ]

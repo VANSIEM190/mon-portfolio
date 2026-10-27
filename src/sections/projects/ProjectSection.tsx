@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { projects } from '../utils/data'
+import { useEffect, useRef, useState } from 'react'
+import { projects } from '../../data/projects'
 import {
   Briefcase,
   ExternalLink,
@@ -8,17 +8,9 @@ import {
   Users,
   FolderGit2,
   ArrowDown,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react'
-
-// Interface TypeScript mise à jour
-interface Project {
-  title: string
-  description: string
-  prefix: string
-  tags: string[]
-  link: string
-  category?: 'Client' | 'Personnel' | 'Communautaire'
-}
 
 interface ProjectImageProps {
   url: string
@@ -150,7 +142,23 @@ export const ProjectImage = ({
 }
 
 const ProjectSection = () => {
-  const projectsData = projects as Project[]
+  const projectsData = projects
+  const projectsScrollerRef = useRef<HTMLDivElement>(null)
+
+  const scrollProjects = (direction: 'previous' | 'next') => {
+    const scroller = projectsScrollerRef.current
+    const firstCard = scroller?.firstElementChild
+
+    if (!scroller || !firstCard) return
+
+    const gap = Number.parseFloat(getComputedStyle(scroller).columnGap) || 0
+    const distance = firstCard.getBoundingClientRect().width + gap
+
+    scroller.scrollBy({
+      left: direction === 'next' ? distance : -distance,
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <section
@@ -182,10 +190,31 @@ const ProjectSection = () => {
               </span>
             </div>
           </div>
+          <div className="mt-8 flex justify-end gap-3 lg:hidden">
+            <button
+              type="button"
+              aria-label="Projet precedent"
+              onClick={() => scrollProjects('previous')}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900 text-zinc-300 transition-colors hover:border-zinc-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              aria-label="Projet suivant"
+              onClick={() => scrollProjects('next')}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900 text-zinc-300 transition-colors hover:border-zinc-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
         </div>
 
         {/* Colonne droite : cartes défilables horizontalement */}
-        <div className="flex snap-x snap-mandatory gap-8 overflow-x-auto pt-24 pb-16 [scrollbar-width:none] lg:h-screen lg:items-center lg:pt-0 [&::-webkit-scrollbar]:hidden">
+        <div
+          ref={projectsScrollerRef}
+          className="flex snap-x snap-mandatory gap-8 overflow-x-auto pt-24 pb-16 [scrollbar-width:none] lg:h-screen lg:items-center lg:pt-0 [&::-webkit-scrollbar]:hidden"
+        >
           {projectsData.map(p => {
             const isMobile = p.link.includes('appetize.io')
 
